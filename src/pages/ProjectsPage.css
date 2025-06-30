@@ -1,0 +1,10 @@
+.ProjectsPage {
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectsPage h1 {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.6;
+}
