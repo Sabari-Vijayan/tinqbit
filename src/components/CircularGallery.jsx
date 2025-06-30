@@ -328,7 +328,7 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: 'Travit' },
+      { image: `/projects/Travit.png`, text: 'Travit' },
       { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: 'KFE (Banking Software' },
       { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: 'Behive -OT module' },
       { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: 'SeaBit' },
