@@ -2,8 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 import AuroraHero from '../components/AuroraHero';
+import FlowingMenu from '../components/FlowingMenu';
+import SpotlightCard from '../components/SpotlightCard';
 
 const HomePage = () => {
+
+  const demoItem = [
+        { link: '#', text: 'What we do?', image: '/projects/Travit.png'}
+  ];
+
   return (
     <>
     <div className="homepage">
@@ -16,9 +23,9 @@ const HomePage = () => {
           <span>Get started</span>
             <svg fill="none" viewBox="0 0 24 24" className="arrow">
               <path
-                stroke-linejoin="round"
-                stroke-linecap="round"
-                stroke-width="2"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
                 stroke="currentColor"
                 d="M5 12h14M13 6l6 6-6 6"
               ></path>
@@ -29,12 +36,50 @@ const HomePage = () => {
     </div>
 
     <section className="rest-content">
-      <h2>
-        What we do?
-      </h2>
-      <p>
-        We've been working continously for the past few years mastering out crafts!
-      </p>
+
+      <div style={{ height: '8rem', position: 'relative' }}>
+        <FlowingMenu items={demoItem} />
+      </div>
+
+      <div className="cards">
+      <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+         <h1>
+          FRONTEND
+        </h1>
+        <p>
+          We craft stunning, responsive, and performant interfaces that users love.
+Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        </p>
+      </SpotlightCard>
+      <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+         <h1>
+          FRONTEND
+        </h1>
+        <p>
+          We craft stunning, responsive, and performant interfaces that users love.
+Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        </p>
+      </SpotlightCard>
+      <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+         <h1>
+          FRONTEND
+        </h1>
+        <p>
+          We craft stunning, responsive, and performant interfaces that users love.
+Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        </p>
+      </SpotlightCard>
+      <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+         <h1>
+          FRONTEND
+        </h1>
+        <p>
+          We craft stunning, responsive, and performant interfaces that users love.
+Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        </p>
+      </SpotlightCard>
+      </div>
+       
 
     </section>
     </>
