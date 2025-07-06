@@ -1,11 +1,15 @@
 /* Reset basic styles */
 .nav-container {
   display: flex;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   justify-content: center;
   padding: 20px 20px 0px 20px;
   background: transparent;
-  z-index: 999;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .navbar {
@@ -13,14 +17,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #000000; /* dark background */
+  background-color: rgba(0, 0, 0, 0.9); /* semi-transparent dark background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
   box-shadow: 0 4px 20px rgba(17, 180, 172, 0.1);
   color: white;
-  top: 10px;
-  z-index: 999;
+  z-index: 1000;
   border-radius: 9999px;
-  transition: all 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
+  max-width: 1200px;
 }
 
 .nav-menu li a {
@@ -28,10 +34,26 @@
   color: white;
   font-weight: 700;
   transition: color 0.3s ease;
+  position: relative;
 }
 
 .nav-menu li a:hover {
   color: #38bdf8; /* sky blue highlight on hover */
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #38bdf8, #13FFAA);
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
 }
 
 /* Logo section */
@@ -100,8 +122,138 @@
 
 .navbar.scrolled {
   padding: 0.75rem 1.5rem;
-  background-color:rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   transform: scale(0.98);
   width: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1201;
+  transition: all 0.3s;
+}
+.hamburger .bar {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu overlay */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 70px; /* below navbar */
+  left: 0;
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-menu.open {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.mobile-nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+}
+.mobile-nav-menu li a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
+}
+.mobile-nav-menu li a:hover {
+  color: #38bdf8;
+}
+.mobile-nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #38bdf8, #13FFAA);
+  transition: width 0.3s ease;
+}
+.mobile-nav-menu li a:hover::after {
+  width: 100%;
+}
+.mobile-get-started-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mobile-get-started {
+  margin-bottom: 2.5rem;
+  width: 80vw;
+  max-width: 320px;
+  font-size: 1.1rem;
+}
+
+/* Hide desktop nav and show hamburger on mobile */
+@media (max-width: 768px) {
+  .nav-buttons,
+  .get-started-section {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 0.7rem 1rem;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* Prevent scroll when mobile menu is open (handled in JS) */
+body.menu-open {
+  overflow: hidden;
 }

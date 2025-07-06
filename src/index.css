@@ -13,7 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+  padding-top: 100px; /* Account for fixed navbar */
 }

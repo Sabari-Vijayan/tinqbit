@@ -53,29 +53,26 @@ Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps th
       </SpotlightCard>
       <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
          <h1>
-          FRONTEND
+          BACKEND
         </h1>
         <p>
-          We craft stunning, responsive, and performant interfaces that users love.
-Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        We engineer robust, scalable, and secure backend systems that power your applications. Using modern technologies like Node.js, Express, and PostgreSQL, we ensure seamless data flow, API integrations, and lightning-fast performance to support millions of users reliably.
         </p>
       </SpotlightCard>
       <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
          <h1>
-          FRONTEND
+          MOBILE
         </h1>
         <p>
-          We craft stunning, responsive, and performant interfaces that users love.
-Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
-        </p>
+        We create sleek, intuitive, and high-performance mobile applications that feel right at home on every device. With frameworks like React Native and Flutter, we build cross-platform apps that deliver native-like experiences — fast, fluid, and built to scale.
+</p>
       </SpotlightCard>
       <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
          <h1>
-          FRONTEND
+          BLOCKCHAIN
         </h1>
         <p>
-          We craft stunning, responsive, and performant interfaces that users love.
-Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps that are fast, scalable, and pixel-perfect — ensuring a seamless experience across all devices.
+        We build decentralized, trustless systems that redefine transparency and security. Leveraging Ethereum, Solidity, and smart contracts, we create blockchain-based applications tailored for real-world use — from NFTs to DeFi — ensuring immutability, scalability, and innovation.
         </p>
       </SpotlightCard>
       </div>

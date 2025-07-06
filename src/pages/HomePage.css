@@ -10,6 +10,7 @@
   background-color: #000000; /* dark navy */
   color: #184675; /* light gray */
   min-height: 80vh;
+
 }
 
 .home-content {
@@ -126,17 +127,32 @@
 }
 
 .rest-content {
-  min-height: 100px;
+  box-sizing: border-box;
   width: 100%;
-  padding: 0;
-  margin-top: 8rem;
-}
-
-.rest-content .cards {
+  max-width: 1200px; /* or whatever fits your design */
+  margin: 6rem auto 0 auto; /* top margin, centered horizontally */
+  padding: 0 1rem; /* some horizontal padding for mobile */
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 8px;
-  margin: 40px;
-  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .rest-content {
+    margin: 2rem 0 0 0;
+    padding: 0 0.5rem;
+    gap: 2rem;
+  }
 }
