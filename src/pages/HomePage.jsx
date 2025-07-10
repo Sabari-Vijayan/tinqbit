@@ -4,6 +4,7 @@ import './HomePage.css';
 import AuroraHero from '../components/AuroraHero';
 import FlowingMenu from '../components/FlowingMenu';
 import SpotlightCard from '../components/SpotlightCard';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
 
@@ -79,6 +80,8 @@ Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps th
        
 
     </section>
+
+    <Footer />
     </>
   );
 }
