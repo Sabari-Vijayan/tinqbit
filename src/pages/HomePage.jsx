@@ -5,6 +5,7 @@ import AuroraHero from '../components/AuroraHero';
 import FlowingMenu from '../components/FlowingMenu';
 import SpotlightCard from '../components/SpotlightCard';
 import Footer from '../components/Footer';
+import OnePage from '../components/onepage';
 
 const HomePage = () => {
 
@@ -78,6 +79,15 @@ Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps th
       </SpotlightCard>
       </div>
        
+
+    </section>
+    <section className="Project-Showcase">
+
+      <OnePage
+      title="Travit"
+      description="A traveland exploration helping app"
+      image="/projects/Travit.ong"
+      />
 
     </section>
 
