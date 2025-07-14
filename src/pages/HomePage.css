@@ -159,11 +159,13 @@
 
 .Project-Showcase {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px; /* or whatever fits your design */
-  margin: 6rem auto 0 auto; /* top margin, centered horizontally */
-  padding: 0 1rem; /* some horizontal padding for mobile */
+  width: 100vw;
+  max-width: none; /* or whatever fits your design */
+  margin: 0 auto; /* top margin, centered horizontally */
+  padding: 0 ; /* some horizontal padding for mobile */
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 0rem;
+
+  scroll-snap-type: y mandatory;
 }

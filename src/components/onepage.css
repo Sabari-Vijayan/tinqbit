@@ -1,66 +1,88 @@
 .onepage-section {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  gap: 3rem;
   background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  padding: 2rem;
-  margin: 2rem 0;
+  border-radius: 0rem;
+  box-shadow: 0 4px 32px rgba(2, 105, 196, 0.612);
+  padding: 3rem 4rem;
+  margin: 0 auto;
   flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+  border: none;
+  scroll-snap-align: start;
 }
 
 .onepage-image-container {
-  flex: 0 0 180px;
+  flex: 0 0 320px;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 320px;
+  min-height: 320px;
 }
 
 .onepage-image {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  border-radius: 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
   background: #f5f5f5;
 }
 
-.onepage-image-container {
-    min-width: 200px;
-    min-height: 200px;
-}
-
 .onepage-content {
-  flex: 1 1 300px;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
 }
 
 .onepage-title {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
-  color: #222;
+  font-size: 4rem;
+  margin: 0 0 1.5rem 0;
+  color: #1a1a1a;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .onepage-description {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.7rem;
+  color: #444;
   margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .onepage-section {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
   .onepage-image-container {
-    margin-bottom: 1rem;
+    min-width: 180px;
+    min-height: 180px;
   }
   .onepage-image {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
+  }
+  .onepage-content {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
   }
   .onepage-title {
-    font-size: 1.3rem;
+    font-size: 2.2rem;
+  }
+  .onepage-description {
+    font-size: 1.1rem;
   }
 }

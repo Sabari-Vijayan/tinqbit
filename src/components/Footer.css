@@ -17,3 +17,11 @@
     font-weight: bold;
     color: white;
 }
+
+.footer .footer-final h2 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 0.75rem;
+}

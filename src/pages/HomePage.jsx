@@ -86,8 +86,37 @@ Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps th
       <OnePage
       title="Travit"
       description="A traveland exploration helping app"
-      image="/projects/Travit.ong"
+      image="/projects/Travit.png"
       />
+
+      <OnePage
+      title="BeeHive"
+      description="A traveland exploration helping app"
+      image="/projects/Travit.png"
+      />
+
+      <OnePage
+      title="Nammude Vipani"
+      description="A traveland exploration helping app"
+      image="/projects/Travit.png"
+      />
+
+      <OnePage
+      title="Travit"
+      description="A traveland exploration helping app"
+      image="/projects/Travit.png"
+      />
+
+    </section>
+
+    <section className="services">
+
+      <div className="services-logo">
+        <img src="/logos/logo.png" alt="tinqbit" className="service-logo-img"/>
+      </div>
+
+      <div className="services-content">
+      </div>
 
     </section>
 
