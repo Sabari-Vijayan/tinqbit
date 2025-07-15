@@ -20,7 +20,7 @@ const HomePage = () => {
     <div className="home-content">
       <h1>Empowering Innovation Through Custom Software</h1>
       <p>Transforming ideas into fast, scalable digital products</p>
-      <Link to="/get-started">
+      <Link to="/Contact-us">
         <button className="get-started-button">
           <span>Get started</span>
             <svg fill="none" viewBox="0 0 24 24" className="arrow">
@@ -110,14 +110,109 @@ Using modern frameworks like React, Vite, and Tailwind CSS, we build web apps th
     </section>
 
     <section className="services">
-
-      <div className="services-logo">
+      <div className="services-col company-info">
         <img src="/logos/logo.png" alt="tinqbit" className="service-logo-img"/>
+        <p>
+          Tinqbit Technologies, with 15+ years of expertise in digital transformation, delivers AI-driven software solutions.
+        </p>
+        <div className="services-social">
+          {/* Replace # with your actual social links */}
+          <a href="#"><i className="fa-brands fa-dribbble"></i></a>
+          <a href="#"><i className="fa-brands fa-instagram"></i></a>
+          <a href="#"><i className="fa-brands fa-facebook"></i></a>
+          <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="#" className="design-studio-btn">
+          Our Design Studio <span className="studio-dot">●</span>
+        </a>
       </div>
-
-      <div className="services-content">
+      <div className="services-col">
+        <h4>Digital Engineering</h4>
+        <ul>
+          <li>User Experience Design</li>
+          <li>Product Engineering</li>
+          <li>Custom Software Development</li>
+          <li>Full Stack App Development</li>
+          <li>Mobile App Development</li>
+          <li>Dedicated Development Team</li>
+        </ul>
+        <h4>Real-time Communication</h4>
+        <ul>
+          <li>WebRTC Development</li>
+          <li>Video Conferencing Development</li>
+          <li>Chat & Messaging App</li>
+          <li>Online Video Streaming</li>
+          <li>Telemedicine App Development</li>
+        </ul>
+        <h4>Data & AI</h4>
+        <ul>
+          <li>AI Development Services</li>
+          <li>Generative AI Development</li>
+          <li>ChatGPT Integration</li>
+          <li>Large Language Model Development</li>
+          <li>Enterprise AI Development</li>
+        </ul>
       </div>
-
+      <div className="services-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li>Twynq – Video Conferencing Platform</li>
+          <li>AI Virtual Avatar</li>
+          <li>Immersive Virtual Classroom</li>
+          <li>Custom LMS Development</li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Our Approach</li>
+          <li>Careers <span className="hiring-badge">Hiring</span></li>
+          <li>Insights</li>
+          <li>Contact</li>
+        </ul>
+        <h4>Industries</h4>
+        <ul>
+          <li>Unified Communication</li>
+          <li>Healthcare</li>
+          <li>Education</li>
+          <li>Media & Entertainment</li>
+        </ul>
+      </div>
+      <div className="services-col">
+        <h4>Technologies</h4>
+        <div className="tech-cols">
+          <div>
+            <strong>Front-end</strong>
+            <ul>
+              <li>AngularJS</li>
+              <li>ReactJS</li>
+              <li>Vue.js</li>
+              <li>Tailwind CSS</li>
+              <li>HTML5</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Back-end</strong>
+            <ul>
+              <li>PHP</li>
+              <li>Node.js</li>
+              <li>C#</li>
+              <li>.NET</li>
+              <li>.NET Core</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Mobile</strong>
+            <ul>
+              <li>Flutter</li>
+              <li>React Native</li>
+              <li>iOS</li>
+              <li>Android</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <Footer />

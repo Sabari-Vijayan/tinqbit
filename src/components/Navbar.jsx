@@ -61,13 +61,13 @@ const Navbar = () => {
         {/* Desktop nav */}
         <div className="nav-buttons">
           <ul className="nav-menu">
-            <li><Link to="/">Homes</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/About-us">About us</Link></li>
             <li><Link to="/Projects">Projects</Link></li>
-            <li><Link to="/Contact-us">Contact Us</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
           </ul>
         </div>
-        <Link to="/get-started" className="get-started-section">
+        <Link to="/Contact-us" className="get-started-section">
           <button className="get-started">
             get started
           </button>
@@ -82,10 +82,10 @@ const Navbar = () => {
         <ul className="mobile-nav-menu">
           <li><Link to="/" onClick={() => setMenuOpen(false)}>Homes</Link></li>
           <li><Link to="/About-us" onClick={() => setMenuOpen(false)}>About us</Link></li>
-          <li><Link to="/Projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
-          <li><Link to="/Contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+          <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+          <li><Link to="/contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
         </ul>
-        <Link to="/get-started" className="mobile-get-started-section" onClick={() => setMenuOpen(false)}>
+        <Link to="/Contact-us" className="mobile-get-started-section" onClick={() => setMenuOpen(false)}>
           <button className="get-started mobile-get-started">get started</button>
         </Link>
       </div>

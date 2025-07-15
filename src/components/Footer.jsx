@@ -22,15 +22,10 @@ Trivandrum, Kerala, India  – 695581
                     <hr />
                 </div>
             </div>
+            <hr/>
             <div className="footer-final">
               <h2>© Copyright tinqbit. All Rights Reserved</h2>
-              <h2>>Designed & Developed by tinqbit.</h2>
-            </div>
-
-            <hr/>
-
-            <div className="links">
-
+              <h2>Designed & Developed by tinqbit.</h2>
             </div>
         </footer>
 
